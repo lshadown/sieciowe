@@ -14,3 +14,9 @@ hs_err_pid*
 _Lab01/_Lab01\.iml
 
 _Lab01/\.idea/
+
+\.idea/misc\.xml
+
+\.idea/
+
+*.iml
