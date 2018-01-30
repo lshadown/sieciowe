@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+<GridPane alignment="center" hgap="10" prefHeight="442.0" prefWidth="374.0" vgap="10"
+          xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="sample.Controller">
+    <Button text="Połącz z serwerem" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.valignment="TOP" onAction="#connectServer"/>
+    <Button text="Rozłącz z serwerem" GridPane.rowIndex="1" GridPane.columnIndex="1" GridPane.valignment="TOP" onAction="#disconnectServer"/>
+
+    <Button text="Wyświetl strukturę katalogów" GridPane.rowIndex="2" GridPane.columnIndex="0" onAction="#showStructure" />
+    <TextField fx:id="textUrl" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+    <Button text="Wyślij plik na serwer" GridPane.rowIndex="3" GridPane.columnIndex="1" onAction="#uploadFile" />
+
+    <TextField fx:id="files" GridPane.rowIndex="4" GridPane.columnIndex="0" />
+    <Button text="Pokaż pliki" GridPane.rowIndex="4" GridPane.columnIndex="1" onAction="#showFiles" />
+
+    <TextField fx:id="downloadFileText" GridPane.rowIndex="5" GridPane.columnIndex="0" />
+    <Button text="Pobierz plik" GridPane.rowIndex="5" GridPane.columnIndex="1" onAction="#downloadFile" />
+
+
+</GridPane>
